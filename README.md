@@ -18,7 +18,7 @@ supabase functions deploy --no-verify-jwt
 4. `deno.json` is needed inside each function to specify the import paths
 properly and while importing you need to add `npm:<package-name>`
 
-> ![WARNING]
+> [!WARNING]
 > There is a 10MB size limit on how much you can pack inside one single function.
 > Be mindful of that.
 
@@ -40,7 +40,7 @@ supabase functions deploy <function-name> --no-verify-jwt
 ```
 7. Go to the URL given in CLI and check it out!
 
-> ![TIP]
+> [!TIP]
 > Do not try to seed the production database. All of that is to be taken care 
 of locally only. Better setup another ENVIRONMENT_VARIABLE which checks whether
 you are in `production` or not and then seeds accordingly.
